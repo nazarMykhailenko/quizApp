@@ -1,0 +1,25 @@
+.header {
+	&__container {
+		padding-top: 1.5rem;
+		padding-bottom: 1.5rem;
+		display: flex;
+		align-items: center;
+	}
+
+	&__logo {
+		img {
+			max-width: 100%;
+		}
+		margin-right: 3rem;
+	}
+
+	&__navigation {
+		flex-grow: 1;
+	}
+
+	&__account {
+		display: flex;
+		align-items: center;
+		column-gap: 2rem;
+	}
+}

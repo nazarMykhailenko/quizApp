@@ -1,5 +1,25 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic';
 html,
+body {
+  height: 100%; }
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+
+.page {
+  flex-grow: 1; }
+
+[class*='__container'] {
+  width: calc(100% - 1.5rem * 2);
+  margin: 0px auto;
+  padding: 0 1.5rem; }
+
+* {
+  box-sizing: border-box; }
+
+html,
 body,
 div,
 span,
@@ -130,3 +150,64 @@ body {
   font-size: 1.6rem;
   font-weight: 400;
   font-family: 'Roboto', sans-serif; }
+
+.navigation__list {
+  display: flex;
+  align-items: center; }
+
+.navigation__item:not(:last-child) {
+  margin-right: 2rem; }
+
+.navigation__link {
+  text-decoration: none;
+  color: #282e3e; }
+  .navigation__link:hover {
+    text-decoration: underline; }
+
+.btn {
+  text-decoration: none;
+  padding: 0.8rem 1.4rem;
+  font-size: 1.4rem;
+  background-color: #fff;
+  display: inline-flex;
+  align-items: center;
+  color: #586380;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out 0s; }
+  .btn img {
+    display: inline-block;
+    margin-left: 0.5rem;
+    width: 1.6rem;
+    height: auto; }
+  .btn:hover {
+    background-color: #f6f7fb;
+    text-decoration: none; }
+  .btn--purple {
+    background-color: #4255ff;
+    color: #fff; }
+    .btn--purple:hover {
+      background-color: #0013c2; }
+  .btn--yellow {
+    background-color: #ffcd1f;
+    color: #282e3e; }
+    .btn--yellow:hover {
+      background-color: #ffd852; }
+
+.header__container {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  display: flex;
+  align-items: center; }
+
+.header__logo {
+  margin-right: 3rem; }
+  .header__logo img {
+    max-width: 100%; }
+
+.header__navigation {
+  flex-grow: 1; }
+
+.header__account {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem; }

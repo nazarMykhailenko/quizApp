@@ -12,8 +12,11 @@
 @import 'base/utilities';
 
 //components
+@import 'components/navigation';
+@import 'components/btn';
 
 //layout
+@import 'layout/header';
 
 // pages
 @import 'pages/home';

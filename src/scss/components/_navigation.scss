@@ -1,0 +1,24 @@
+.navigation {
+	&__body {
+	}
+
+	&__list {
+		display: flex;
+		align-items: center;
+	}
+
+	&__item {
+		&:not(:last-child) {
+			margin-right: 2rem;
+		}
+	}
+
+	&__link {
+		text-decoration: none;
+		color: #282e3e;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
