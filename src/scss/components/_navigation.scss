@@ -1,15 +1,14 @@
 .navigation {
-	&__body {
-	}
+	@media (min-width: 56.25em) {
+		&__list {
+			display: flex;
+			align-items: center;
+		}
 
-	&__list {
-		display: flex;
-		align-items: center;
-	}
-
-	&__item {
-		&:not(:last-child) {
-			margin-right: 2rem;
+		&__item {
+			&:not(:last-child) {
+				margin-right: 2rem;
+			}
 		}
 	}
 
@@ -19,6 +18,46 @@
 
 		&:hover {
 			text-decoration: underline;
+		}
+	}
+
+	@include respond(tab-port) {
+		&__body {
+			position: fixed;
+			width: 100%;
+			top: 0;
+			bottom: 0;
+			left: -100%;
+			background-color: $color-primary;
+			@include transition(left);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			&._active {
+				left: 0;
+			}
+		}
+
+		&__item {
+			&:not(:last-child) {
+				margin-bottom: 2rem;
+			}
+		}
+
+		&__link {
+			font-size: 2rem;
+			color: $color-white;
+
+			&.btn {
+				background-color: $color-white;
+				color: $color-primary;
+				font-size: 2rem;
+
+				&:hover {
+					background-color: darken($color-white, $darken-amount / 10);
+				}
+			}
 		}
 	}
 }

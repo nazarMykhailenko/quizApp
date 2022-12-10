@@ -12,7 +12,13 @@
 			<header class="header">
 				<div class="header__container">
 					<div class="header__logo">
-						<img src="../src/assets/img/logo.svg" alt="logo" />
+						<picture>
+							<source
+								media="(max-width: 28.125em)"
+								srcset="../src/assets/img/logo-small.svg"
+							/>
+							<img src="../src/assets/img/logo.svg" alt="logo" />
+						</picture>
 					</div>
 					<nav class="header__navigation navigation">
 						<div class="navigation__body">
@@ -29,13 +35,20 @@
 									<a href="#" class="navigation__link">Experts solutions</a>
 								</li>
 								<li class="navigation__item">
-									<a href="#" class="navigation__link btn btn--purple"
-										>Create
-										<img
-											src="../src/assets/img/arrow-down.svg"
-											alt="arrow"
-											class="navigation__arrow navigation__arrow-down"
-									/></a>
+									<a href="#" class="navigation__link btn btn--purple">
+										Create
+										<picture>
+											<source
+												media="(max-width: 56.25em)"
+												srcset="../src/assets/img/arrow-down--purple.svg"
+											/>
+											<img
+												src="../src/assets/img/arrow-down.svg"
+												alt="arrow"
+												class="navigation__arrow navigation__arrow-down"
+											/>
+										</picture>
+									</a>
 								</li>
 							</ul>
 						</div>
@@ -43,6 +56,10 @@
 					<div class="header__account">
 						<a href="#" class="btn">Log in</a>
 						<a href="#" class="btn btn--yellow">Sign up</a>
+						<!-- burger -->
+						<div class="header__icon">
+							<span></span>
+						</div>
 					</div>
 				</div>
 			</header>
