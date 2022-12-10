@@ -1,0 +1,14 @@
+{
+	"name": "quizapp",
+	"version": "1.0.0",
+	"description": "",
+	"main": "app.js",
+	"scripts": {
+		"compile:scss": "node-sass src/scss/main.scss src/css/styles.css -w"
+	},
+	"author": "nazarMykhailenko",
+	"license": "ISC",
+	"dependencies": {
+		"node-sass": "^8.0.0"
+	}
+}
