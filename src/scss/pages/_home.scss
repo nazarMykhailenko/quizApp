@@ -1,3 +1,9 @@
 .cover-section {
 	padding: 18rem 12rem;
+	@include respond(tab-land) {
+		padding: 12rem 8rem;
+	}
+	@include respond(tab-port) {
+		padding: 8rem 5rem;
+	}
 }

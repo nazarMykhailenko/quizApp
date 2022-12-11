@@ -153,6 +153,15 @@ table {
 
 html {
   font-size: 62.5%; }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 60%; } }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 52%; } }
 
 body {
   font-size: 1.6rem;
@@ -163,17 +172,35 @@ body {
   font-weight: 500;
   font-size: 4rem;
   line-height: 1.2; }
+  @media (max-width: 56.25em) {
+    .title {
+      font-size: 2.5rem; } }
+  @media (max-width: 37.5em) {
+    .title {
+      max-width: 30rem; } }
 
 .text {
   line-height: 1.5;
   font-size: 1.8rem;
   letter-spacing: 2px; }
+  @media (max-width: 56.25em) {
+    .text {
+      font-size: 1.6rem; } }
+  @media (max-width: 37.5em) {
+    .text {
+      max-width: 30rem; } }
 
 .margin-b-3 {
   margin-bottom: 3rem; }
+  @media (max-width: 56.25em) {
+    .margin-b-3 {
+      margin-bottom: 1.5rem; } }
 
 .margin-b-2 {
   margin-bottom: 2rem; }
+  @media (max-width: 56.25em) {
+    .margin-b-2 {
+      margin-bottom: 1rem; } }
 
 @media (min-width: 56.25em) {
   .navigation__list {
@@ -261,6 +288,12 @@ body {
   .cover__container {
     max-width: 56rem;
     margin: 0; }
+    @media (max-width: 37.5em) {
+      .cover__container {
+        max-width: 40rem; } }
+    @media (max-width: 28.125em) {
+      .cover__container {
+        max-width: 30rem; } }
 
 .ibg {
   position: absolute;
@@ -336,3 +369,9 @@ body {
 
 .cover-section {
   padding: 18rem 12rem; }
+  @media (max-width: 75em) {
+    .cover-section {
+      padding: 12rem 8rem; } }
+  @media (max-width: 56.25em) {
+    .cover-section {
+      padding: 8rem 5rem; } }

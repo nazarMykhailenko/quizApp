@@ -16,5 +16,13 @@
 	&__container {
 		max-width: 56rem;
 		margin: 0;
+
+		@include respond(phone) {
+			max-width: 40rem;
+		}
+
+		@media (max-width: 28.125em) {
+			max-width: 30rem;
+		}
 	}
 }
