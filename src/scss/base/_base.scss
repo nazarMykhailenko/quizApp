@@ -3,6 +3,14 @@ body {
 	height: 100%;
 }
 
+body {
+	overflow-x: hidden;
+
+	&._locked {
+		overflow: hidden;
+	}
+}
+
 .wrapper {
 	height: 100%;
 	display: flex;

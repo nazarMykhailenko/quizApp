@@ -1,4 +1,12 @@
 .header {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: $color-white;
+	z-index: 5;
+	box-shadow: 0.1rem 0rem 10rem rgba($color-black, 0.1);
+
 	&__container {
 		padding-top: 1.5rem;
 		padding-bottom: 1.5rem;

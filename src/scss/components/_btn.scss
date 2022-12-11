@@ -38,4 +38,9 @@
 			background-color: lighten($color-secondary, $lighten-amount);
 		}
 	}
+
+	&--big {
+		padding: 1.4rem 2rem;
+		font-size: 1.6rem;
+	}
 }

@@ -1,0 +1,20 @@
+.cover {
+	position: relative;
+	color: $color-white;
+
+	&::after {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		background-color: rgba($color-black, 0.5);
+	}
+
+	&__container {
+		max-width: 56rem;
+		margin: 0;
+	}
+}
